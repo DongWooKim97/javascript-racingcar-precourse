@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>자동차 경주 게임</title>
-  <script src="https://cdn.jsdelivr.net/npm/@woowacourse/mission-utils@1.0.1/dist/mission-utils.min.js"></script>
 </head>
 
 <body>
@@ -15,18 +14,19 @@
       <br />
       올바른 예) east,west,south,north <br />
     </p>
-    <form>
+    <form id="names-form">
       <input id="car-names-input" type="text" />
       <button id="car-names-submit">확인</button>
     </form>
-    <h4>시도할 횟수를 입력해주세요.</h4>
-    <form>
+    <h4 id="input-try">시도할 횟수를 입력해주세요.</h4>
+    <form id="racing-form">
       <input id="racing-count-input" type="number" />
       <button id="racing-count-submit">확인</button>
     </form>
-    <h4>📄 실행 결과</h4>
-    <h4>최종 우승자: <span id="racing-winners">(우승자)</span></h4>
+    <h4 id="result">📄 실행 결과</h4>
+    <h4 id="final-winner">최종 우승자: <span id="racing-winners">(우승자)</span></h4>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@woowacourse/mission-utils@1.0.1/dist/mission-utils.min.js"></script>
   <script type="module" src="src/index.js"></script>
 </body>
 
